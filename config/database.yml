@@ -1,0 +1,59 @@
+# Default setup is given for MySQL 5.7.7 or later.
+# Examples for PostgreSQL, SQLite3 and SQL Server can be found at the end.
+# Line indentation must be 2 spaces (no tabs).
+#postgres://naphhqozjcfxei:942ee0618afe1d50ef132f6938f31e0b27ee8a9282da8af18468e3babf4d234d@ec2-34-200-72-77.compute-1.amazonaws.com:5432/dbunaj0fo4cor4
+#postgres://srhkjhitygsfyg:09687eea06fbe3a5a405542a5bd0c25a5358283f96b885e8f88779664ca42e73@ec2-46-137-177-160.eu-west-1.compute.amazonaws.com:5432/d27gpv328l86n
+production:
+  adapter: mysql2
+  database: redmine
+  host: li1800-50.members.linode.com
+  username: viren-admin
+  password: Toolsqa@@786
+  port: 3306
+  # Use "utf8" instead of "utfmb4" for MySQL prior to 5.7.7
+  encoding: utf8
+  secure_auth: false
+development:
+  adapter: mysql2
+  database: redmine
+  host: li1800-50.members.linode.com
+  username: viren-admin
+  password: Toolsqa@@786
+  port: 3306
+  # Use "utf8" instead of "utfmb4" for MySQL prior to 5.7.7
+  encoding: utf8
+  secure_auth: false
+
+# # Warning: The database defined as "test" will be erased and
+# # re-generated from your development database when you run "rake".
+# # Do not set this db to the same as development or production.
+test:
+  adapter: mysql2
+  database: redmine
+  host: li1800-50.members.linode.com
+  username: viren-admin
+  password: Toolsqa@@786
+  port: 3306
+  # Use "utf8" instead of "utfmb4" for MySQL prior to 5.7.7
+  encoding: utf8
+  secure_auth: false
+# PostgreSQL configuration example
+#production:
+#  adapter: postgresql
+#  database: redmine
+#  host: localhost
+#  username: postgres
+#  password: "postgres"
+
+# SQLite3 configuration example
+#production:
+#  adapter: sqlite3
+#  database: db/redmine.sqlite3
+
+# SQL Server configuration example
+#production:
+#  adapter: sqlserver
+#  database: redmine
+#  host: localhost
+#  username: jenkins
+#  password: jenkins
